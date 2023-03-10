@@ -6,8 +6,6 @@ var search_movie = "";
 
 const API = "https://api.themoviedb.org/3/movie/popular?api_key=699c4d2bdeb0e649218e681b0f725948";
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=699c4d2bdeb0e649218e681b0f725948&query=${search_movie}`
-
 
 const getMovies  = async (api) => {
     const response = await fetch(api);

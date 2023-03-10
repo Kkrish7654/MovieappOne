@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
 </head>
 <body>
     <header id="header">
@@ -25,10 +26,23 @@
             </div>   
         </nav>
     </header>
+    <div class="topbar">
+        <main class="carousel-container">
+              <img class="slide" src="batman.jpg" alt="">
+              <img class="slide" src="spiderman.jpg" alt="">
+              <img class="slide" src="pushpa.jpg" alt="">
+              <img class="slide" src="panther.jpg" alt="">
+        </main>
+        <div class="carousel-buttons">
+            <button onclick="goPrev()" id="prev-button">prev</button>
+            <button onclick="goNext()" id="next-button">next</button>
+    </div>
+    <h1>populars</h1>
+    </div>
     <div id="container" class="container blurred">
-
     </div>
     <script src="./main.js"></script>
     <script src="./header.js"></script>
+    <script src="./carousel.js"></script>
 </body>
 </html>
